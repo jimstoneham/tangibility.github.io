@@ -1,0 +1,104 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Our Work</title><meta name="GENERATOR" content="Freeway Pro 3.5.12"><style type="text/css">
+<!--
+p { margin-top:0px }
+a:visited { font-family: Arial, Helvetica, Verdana; text-decoration: none; color: #000; line-height: 103%; margin-top: 8px; margin-bottom: 8px; }
+a:link { }
+.BodyTextSM { line-height: 103%; margin-top: 8px; margin-bottom: 8px; }
+.SubHead { margin-top: 20px; margin-bottom: 0.1px; }
+.CustomerComments { font-size: 10px; line-height: 140%; margin-top: 16px; margin-bottom: 6px; }
+.ItalicsQuotes { font-size: 9px; margin-top: 0px; margin-bottom: 0.1px; }
+.GrayList { font-size: 10px; line-height: 160%; margin-top: 0px; margin-bottom: 25px; }
+-->
+</style>
+<script language="javascript" type="text/javascript"><!--
+
+fwLoad = new Object;
+function FWLoad(image)
+{
+	if (!document.images)
+		return null;
+	if (!fwLoad[image])
+	{
+		fwLoad[image]=new Image;
+		fwLoad[image].src=image;
+	}
+	return fwLoad[image].src;
+}
+
+fwRestore = new Object;
+function FWRestore(msg,chain) 
+{
+	if (document.images) 
+		for (var i in fwRestore)
+		{
+			var r = fwRestore[i];
+			if (r && (!chain || r.chain==chain) && r.msg==msg)
+			{
+				r.src = FWLoad(r.old);
+				fwRestore[i]=null;
+			}
+		}
+}
+
+function FWSwap(name,msg,newImg,chain,trigger) 
+{
+	var r = fwRestore[name];
+	if (document.images && (!r || r.msg < msg)) 
+	{
+		var im = document[name];
+		if (!im.old) im.old = im.src;
+		im.msg = msg;
+		im.chain = chain;
+		im.trigger = trigger;
+		if (newImg) im.src = FWLoad(newImg);
+		fwRestore[name] = im;
+	}
+}
+
+function FWCallHit(func,targNum,msg)
+{
+	if(func)
+		for (var i in func)
+			func[i](targNum,msg);
+}
+function FW_Hit(frameset,chain,targNum,msg)
+{
+	if (frameset && frameset.length)
+		for (var i=0 ; i <frameset.length ; i++)
+		{
+			FW_Hit(frameset[i].frames,chain,targNum,msg);
+			FWCallHit(top["FT_"+chain],targNum,msg);
+			FWCallHit(frameset[i].window["FT_"+chain],targNum,msg);
+		}
+	else
+		FWCallHit(window["FT_"+chain],targNum,msg);
+}
+
+fwHit = new Object;
+function FWSlave(frameset,chain,targNum,msg)
+{
+	if (msg==1) fwHit[chain]=targNum;
+	FW_Hit(frameset,chain,targNum,1);
+}
+
+function FWSRestore(frameset,chain)
+{
+	var hit=fwHit[chain];
+	if (hit)
+		FW_Hit(frameset,chain,hit,0);
+	fwHit[chain]=null;
+}
+function FWPreload(){FWLoad("apaa.gif");FWLoad("contactusnorma.gif");FWLoad("contactusnorm.gif");FWLoad("clientloginnorma.gif");FWLoad("clientloginnorm.gif");FWLoad("aboutusnorma.gif");FWLoad("aboutusnorm.gif");FWLoad("ourworknorma.gif");FWLoad("ourworknorm.gif");}
+function FWHitSwap(name,num,image)
+{
+	var image = arguments[num+2];
+	if (document.images && image)
+		document[name].src = FWLoad(image);
+}
+
+//-->
+</script></head><body topmargin=0 leftmargin=0 marginheight=0 marginwidth=0 bgcolor="#ffffff" link="#666666" alink="#faa70e" vlink="#999999" onload="FWPreload()"><table border=0 cellspacing=0 cellpadding=0 width=762><tr valign=top><td colspan=3 rowspan=10><a href="index.html"><img src="whitelogo1.gif" border=0 width=560 height=120 alt=""></a></td><td colspan=4></td><td height=1></td></tr><tr valign=top><td rowspan=9></td><td colspan=3></td><td height=45></td></tr><tr valign=top><td></td><td><img src="aboutusnorma.gif" border=0 width=84 height=14 alt="" usemap="#map1" name="img3"></td><td></td><td height=14></td></tr><tr valign=top><td colspan=3></td><td height=4></td></tr><tr valign=top><td></td><td><img src="ourworknorma.gif" border=0 width=84 height=14 alt="" usemap="#map2" name="img4"></td><td></td><td height=14></td></tr><tr valign=top><td colspan=3></td><td height=4></td></tr><tr valign=top><td></td><td><img src="contactusnorma.gif" border=0 width=84 height=14 alt="" usemap="#map3" name="img1"></td><td></td><td height=14></td></tr><tr valign=top><td colspan=3></td><td height=4></td></tr><tr valign=top><td></td><td><img src="clientloginnorma.gif" border=0 width=84 height=14 alt="" usemap="#map4" name="img2"></td><td></td><td height=14></td></tr><tr valign=top><td colspan=3></td><td height=6></td></tr><tr valign=top><td></td><td></td><td colspan=5 rowspan=2 bgcolor="#cccccc"><spacer type=block width=1 height=1></td><td height=1></td></tr><tr valign=top><td colspan=2></td><td height=19></td></tr><tr><td width=1><img src="_clear.gif" border=0 width=1 height=1 alt=""></td><td width=359><img src="_clear.gif" border=0 width=359 height=1 alt=""></td><td width=200><img src="_clear.gif" border=0 width=200 height=1 alt=""></td><td width=1><img src="_clear.gif" border=0 width=1 height=1 alt=""></td><td width=6><img src="_clear.gif" border=0 width=6 height=1 alt=""></td><td width=84><img src="_clear.gif" border=0 width=84 height=1 alt=""></td><td width=109><img src="_clear.gif" border=0 width=109 height=1 alt=""></td><td width=2 height=1><img src="_clear.gif" border=0 width=2 height=1 alt=""></td></tr></table><map name="map1"><area alt="" coords="0,0,84,13" href="aboutus.html" onMouseOver="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWSwap('img3',1,'aboutusnorm.gif','Indigo')" onMouseOut="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"><area alt="" coords="0,1,84,14" href="aboutus.html" onMouseOver="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWSwap('img3',1,'aboutusnorm.gif','Indigo')" onMouseOut="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"></map><map name="map2"><area alt="" coords="0,0,84,13" href="ourwork.html" onMouseOver="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWSwap('img4',1,'ourworknorm.gif','Indigo')" onMouseOut="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"><area alt="" coords="0,1,84,14" href="ourwork.html" onMouseOver="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWSwap('img4',1,'ourworknorm.gif','Indigo')" onMouseOut="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"></map><map name="map3"><area alt="" coords="0,0,84,13" href="contactus.html" onMouseOver="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWSwap('img1',1,'contactusnorm.gif','Indigo')" onMouseOut="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"><area alt="" coords="0,1,84,14" href="contactus.html" onMouseOver="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWSwap('img1',1,'contactusnorm.gif','Indigo')" onMouseOut="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"></map><map name="map4"><area alt="" coords="0,0,84,13" href="clientloginpage.html" onMouseOver="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWSwap('img2',1,'clientloginnorm.gif','Indigo')" onMouseOut="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"><area alt="" coords="0,1,84,14" href="clientloginpage.html" onMouseOver="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWSwap('img2',1,'clientloginnorm.gif','Indigo')" onMouseOut="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"></map><table border=0 cellspacing=0 cellpadding=0 width=762><tr valign=top><td colspan=8></td><td height=11></td></tr><tr valign=top><td rowspan=4></td><td colspan=2 rowspan=4><img src="_clear.gif" border=0 width=1 height=1 alt=""><br><img src="item3a1.gif" border=0 width=68 height=15 alt=""></td><td colspan=5></td><td height=4></td></tr><tr valign=top><td rowspan=3></td><td rowspan=5><table border=0 cellspacing=0 cellpadding=0 width=179><tr valign=top><td colspan=7><img src="_clear.gif" border=0 width=1 height=2 alt=""><br><img src="recentclients1b.gif" border=0 width=116 height=12 alt=""></td><td height=15></td></tr><tr valign=top><td colspan=7></td><td height=14></td></tr><tr valign=top><td><a href="adobe.html" onMouseOver="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWSlave(top.frames,'Indigo',10,1)" onMouseOut="FWRestore(1,'Indigo',10);FWSRestore(top.frames,'Indigo')"><img src="adobea.gif" border=0 width=60 height=60 alt=""></a></td><td colspan=3></td><td><a href="verisign.html" onMouseOver="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onMouseOut="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"><img src="verisigna.gif" border=0 width=60 height=60 alt=""></a></td><td colspan=2></td><td height=60></td></tr><tr valign=top><td colspan=7></td><td height=10></td></tr><tr valign=top><td><a href="portolapackaging.html" onMouseOver="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWSlave(top.frames,'Indigo',2,1)" onMouseOut="FWRestore(1,'Indigo',2);FWSRestore(top.frames,'Indigo')"><img src="portolaa.gif" border=0 width=60 height=60 alt=""></a></td><td colspan=2></td><td colspan=3><a href="zingnetworksa.html" onMouseOver="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWSlave(top.frames,'Indigo',3,1)" onMouseOut="FWRestore(1,'Indigo',3);FWSRestore(top.frames,'Indigo')"><img src="zingsonyb.gif" border=0 width=62 height=60 alt=""></a></td><td></td><td height=60></td></tr><tr valign=top><td colspan=7></td><td height=9></td></tr><tr valign=top><td><a href="appleprocessinga.html" onMouseOver="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWSlave(top.frames,'Indigo',5,1)" onMouseOut="FWRestore(1,'Indigo',5);FWSRestore(top.frames,'Indigo')"><img src="apaa.gif" border=0 width=60 height=60 alt=""></a></td><td></td><td colspan=3><a href="cyracom.html" onMouseOver="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWSlave(top.frames,'Indigo',9,1)" onMouseOut="FWRestore(1,'Indigo',9);FWSRestore(top.frames,'Indigo')"><img src="cyracoma.gif" border=0 width=63 height=60 alt=""></a></td><td colspan=2></td><td height=60></td></tr><tr valign=top><td colspan=7></td><td height=9></td></tr><tr valign=top><td><a href="alloyventures.html" onMouseOver="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWSlave(top.frames,'Indigo',7,1)" onMouseOut="FWRestore(1,'Indigo',7);FWSRestore(top.frames,'Indigo')"><img src="alloyonwhite.gif" border=0 width=60 height=60 alt=""></a></td><td colspan=2></td><td colspan=2 rowspan=2><a href="hcorp.html" onMouseOver="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWSlave(top.frames,'Indigo',6,1)" onMouseOut="FWRestore(1,'Indigo',6);FWSRestore(top.frames,'Indigo')"><img src="hcorponwhitea.gif" border=0 width=61 height=67 alt=""></a></td><td colspan=2 rowspan=2></td><td height=60></td></tr><tr valign=top><td colspan=3></td><td height=7></td></tr><tr valign=top><td colspan=7></td><td height=2></td></tr><tr valign=top><td><a href="knightridder.html" onMouseOver="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWSlave(top.frames,'Indigo',8,1)" onMouseOut="FWRestore(1,'Indigo',8);FWSRestore(top.frames,'Indigo')"><img src="knightridder1.gif" border=0 width=60 height=60 alt=""></a></td><td colspan=6></td><td height=60></td></tr><tr><td width=60><img src="_clear.gif" border=0 width=60 height=1 alt=""></td><td width=8><img src="_clear.gif" border=0 width=8 height=1 alt=""></td><td width=2><img src="_clear.gif" border=0 width=2 height=1 alt=""></td><td width=1><img src="_clear.gif" border=0 width=1 height=1 alt=""></td><td width=60><img src="_clear.gif" border=0 width=60 height=1 alt=""></td><td width=1><img src="_clear.gif" border=0 width=1 height=1 alt=""></td><td width=46><img src="_clear.gif" border=0 width=46 height=1 alt=""></td><td width=1 height=1><img src="_clear.gif" border=0 width=1 height=1 alt=""></td></tr></table></td><td></td><td><img src="_clear.gif" border=0 width=1 height=2 alt=""><br><img src="recentclients1ab.gif" border=0 width=60 height=10 alt=""></td><td></td><td height=15></td></tr><tr valign=top><td colspan=3></td><td height=1></td></tr><tr valign=top><td rowspan=3></td><td colspan=2 rowspan=4><p class="CustomerComments"><font face="Arial, Helvetica, Verdana" size=2 color="#666666">I've worked with a lot of consultants, and you guys are worth every nickel.</font></p><p class="ItalicsQuotes" align=right><i><font face="Arial, Helvetica, Verdana" size=1 color="#666666">Steve Saylor</font></i></p><p class="ItalicsQuotes" align=right><i><font face="Arial, Helvetica, Verdana" size=1 color="#666666">VP DI/DV Business Unit </font></i></p><p class="ItalicsQuotes" align=right><i><font face="Arial, Helvetica, Verdana" size=1 color="#666666">Adobe Systems, Inc.</font></i><font face="Arial, Helvetica, Verdana" size=2 color="#666666"></font></p><p class="CustomerComments"><font face="Arial, Helvetica, Verdana" size=2 color="#666666">Tangibility combines incisive, creative, and flexible thinking with world-class design sensibilities and great integrity. They have demonstrated a commitment to results and value creation.</font></p><p class="ItalicsQuotes" align=right><i><font face="Arial, Helvetica, Verdana" size=1 color="#666666">Gautam Barua</font></i></p><p class="ItalicsQuotes" align=right><i><font face="Arial, Helvetica, Verdana" size=1 color="#666666">Principal &amp; Founder </font></i></p><p class="ItalicsQuotes" align=right><i><font face="Arial, Helvetica, Verdana" size=1 color="#666666">Barua, Blok &amp; Associates</font></i></p><p class="CustomerComments"><font face="Arial, Helvetica, Verdana" size=2 color="#666666">Tangibility has pulled together a talented team of  professionals who provide critically fundamental, and yet often overlooked, services in the field of web design and development.</font></p><p class="ItalicsQuotes" align=right><i><font face="Arial, Helvetica, Verdana" size=1 color="#666666">Fay Mark                                              </font></i></p><p class="ItalicsQuotes" align=right><i><font face="Arial, Helvetica, Verdana" size=1 color="#666666">Director Web Services                        </font></i></p><p class="ItalicsQuotes" align=right><i><font face="Arial, Helvetica, Verdana" size=1 color="#666666">VeriSign, Inc.</font></i></p><p class="CustomerComments"><font face="Arial, Helvetica, Verdana" size=2 color="#666666">To say that Christina played a pivotal role in turning my engineering-driven software startup into a product-driven one would be a significant understatement.</font></p><p class="ItalicsQuotes" align=right><i><font face="Arial, Helvetica, Verdana" size=1 color="#666666">Randall Farmer </font></i></p><p class="ItalicsQuotes" align=right><i><font face="Arial, Helvetica, Verdana" size=1 color="#666666">CTO and Founder</font></i></p><p class="ItalicsQuotes" align=right><i><font face="Arial, Helvetica, Verdana" size=1 color="#666666">Electric Communities</font></i></p><p class="ItalicsQuotes" align=right><i><font face="Arial, Helvetica, Verdana" size=1 color="#666666">&nbsp;</font></i></p></td><td height=5></td></tr><tr valign=top><td colspan=4></td><td height=3></td></tr><tr valign=top><td rowspan=3></td><td rowspan=3><p class="BodyTextSM"><font face="Arial, Helvetica, Verdana" size="-1">Unlike management consulting firms that stop with the strategy deck or more tactical firms that lose sight of the overall vision, we work from strategy through market delivery to ensure your new business is on target and isn't  &quot;lost in translation.&quot;</font></p><p class="SubHead"><b><font face="Arial, Helvetica, Verdana" size="-1">Strategy Development</font></b></p><p class="BodyTextSM"><font face="Arial, Helvetica, Verdana" size="-1">We help you create strategies tuned to your customers, competition, and capabilities. We immerse ourselves in your business, asking hard questions about your goals, customers, brand aspirations, partners, internal capabilities, and funding.  We then test these assumptions against market, competitive, and technological realities. </font></p><p><font face="Arial, Helvetica, Verdana" size="-1" color="#666666">Result: A complete and clarifying roadmap for your team.</font></p><p class="SubHead"><b><font face="Arial, Helvetica, Verdana" size="-1">Market Definition</font></b></p><p class="BodyTextSM"><font face="Arial, Helvetica, Verdana" size="-1">We &quot;go deep&quot; into available market data and other insights to craft a market model that reflects reality for you, along with a market entry plan to optimize success. We will often field primary research to inform this process, and have extensive experience driving various types of research to get the answers you need to run your business. A favorite technique combines ethnographic study with rapid prototyping to efficiently get to unique insights unavailable through any other method.</font></p><p><font face="Arial, Helvetica, Verdana" size="-1" color="#666666">Result: A deep understanding of your target customers and markets. </font></p><p class="SubHead"><b><font face="Arial, Helvetica, Verdana" size="-1">Product and Services Planning</font></b></p><p class="BodyTextSM"><font face="Arial, Helvetica, Verdana" size="-1">We help you design and develop products and services that &#147;fire on all cylinders.&#148;  Working closely with developers and stakeholders, we help stimulate innovative ideas, identify product requirements, evaluate technology options, write detailed specifications, and rapidly create and test prototypes with your customers. </font></p><p><font face="Arial, Helvetica, Verdana" size="-1" color="#666666">Result: Products and services that delight customers and deliver on your strategic goals.</font></p><p class="SubHead"><b><font face="Arial, Helvetica, Verdana" size="-1">Lifecycle Management</font></b></p><p class="BodyTextSM"><font face="Arial, Helvetica, Verdana" size="-1">From product concept through retirement, we help you improve products, support customers, beat the competition, reduce costs, minimize downtime, and increase profits. We can help you respond to customization requests from partners and customers, move quickly into global markets, and manage integration, and outsourcing with minimum pain. When it's time to pull the plug, we can help you do it right. </font></p><p><font face="Arial, Helvetica, Verdana" size="-1" color="#666666">Result: Continuous success throughout the lifecycle.</font></p><p class="BodyTextSM"><font face="Arial, Helvetica, Verdana" size="-1">&nbsp;</font></p></td><td colspan=2></td><td height=343></td></tr><tr valign=top><td colspan=4></td><td height=119></td></tr><tr valign=top><td colspan=6></td><td height=190></td></tr><tr><td width=10><img src="_clear.gif" border=0 width=10 height=1 alt=""></td><td width=315><img src="_clear.gif" border=0 width=315 height=1 alt=""></td><td width=8><img src="_clear.gif" border=0 width=8 height=1 alt=""></td><td width=27><img src="_clear.gif" border=0 width=27 height=1 alt=""></td><td width=179><img src="_clear.gif" border=0 width=179 height=1 alt=""></td><td width=28><img src="_clear.gif" border=0 width=28 height=1 alt=""></td><td width=178><img src="_clear.gif" border=0 width=178 height=1 alt=""></td><td width=15><img src="_clear.gif" border=0 width=15 height=1 alt=""></td><td width=2 height=1><img src="_clear.gif" border=0 width=2 height=1 alt=""></td></tr></table><table border=0 cellspacing=0 cellpadding=0 width=762><tr valign=top><td></td><td height=71></td></tr><tr valign=top><td bgcolor="#999999"><spacer type=block width=1 height=1></td><td height=1></td></tr><tr><td width=360><img src="_clear.gif" border=0 width=360 height=1 alt=""></td><td width=402 height=1><img src="_clear.gif" border=0 width=402 height=1 alt=""></td></tr></table><table border=0 cellspacing=0 cellpadding=0 width=762><tr valign=top><td colspan=2></td><td height=7></td></tr><tr valign=top><td></td><td><p><font face="Arial, Helvetica, Verdana" size="-2" color="#666666">Copyright 2005 Tangibility, Inc.</font></p></td><td height=13></td></tr><tr><td width=10><img src="_clear.gif" border=0 width=10 height=1 alt=""></td><td width=182><img src="_clear.gif" border=0 width=182 height=1 alt=""></td><td width=570 height=1><img src="_clear.gif" border=0 width=570 height=1 alt=""></td></tr></table><script language="javascript" type="text/javascript"><!--
+
+//-->
+</script></body></html>
