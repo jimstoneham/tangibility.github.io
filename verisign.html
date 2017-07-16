@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>VeriSign</title><meta name="GENERATOR" content="Freeway Pro 3.5.12"><style type="text/css">
+<!--
+p { margin-top:0px }
+.BodyTextSM { line-height: 103%; margin-top: 8px; margin-bottom: 8px; }
+.GrayList { font-size: 10px; line-height: 160%; margin-top: 0px; margin-bottom: 25px; }
+-->
+</style>
+<script language="javascript" type="text/javascript"><!--
+
+fwLoad = new Object;
+function FWLoad(image)
+{
+	if (!document.images)
+		return null;
+	if (!fwLoad[image])
+	{
+		fwLoad[image]=new Image;
+		fwLoad[image].src=image;
+	}
+	return fwLoad[image].src;
+}
+
+fwRestore = new Object;
+function FWRestore(msg,chain) 
+{
+	if (document.images) 
+		for (var i in fwRestore)
+		{
+			var r = fwRestore[i];
+			if (r && (!chain || r.chain==chain) && r.msg==msg)
+			{
+				r.src = FWLoad(r.old);
+				fwRestore[i]=null;
+			}
+		}
+}
+
+function FWSwap(name,msg,newImg,chain,trigger) 
+{
+	var r = fwRestore[name];
+	if (document.images && (!r || r.msg < msg)) 
+	{
+		var im = document[name];
+		if (!im.old) im.old = im.src;
+		im.msg = msg;
+		im.chain = chain;
+		im.trigger = trigger;
+		if (newImg) im.src = FWLoad(newImg);
+		fwRestore[name] = im;
+	}
+}
+
+function FWCallHit(func,targNum,msg)
+{
+	if(func)
+		for (var i in func)
+			func[i](targNum,msg);
+}
+function FW_Hit(frameset,chain,targNum,msg)
+{
+	if (frameset && frameset.length)
+		for (var i=0 ; i <frameset.length ; i++)
+		{
+			FW_Hit(frameset[i].frames,chain,targNum,msg);
+			FWCallHit(top["FT_"+chain],targNum,msg);
+			FWCallHit(frameset[i].window["FT_"+chain],targNum,msg);
+		}
+	else
+		FWCallHit(window["FT_"+chain],targNum,msg);
+}
+
+fwHit = new Object;
+function FWSlave(frameset,chain,targNum,msg)
+{
+	if (msg==1) fwHit[chain]=targNum;
+	FW_Hit(frameset,chain,targNum,1);
+}
+
+function FWSRestore(frameset,chain)
+{
+	var hit=fwHit[chain];
+	if (hit)
+		FW_Hit(frameset,chain,hit,0);
+	fwHit[chain]=null;
+}
+function FWPreload(){FWLoad("clientloginnorma.gif");FWLoad("clientloginnorm.gif");FWLoad("aboutusnorma.gif");FWLoad("aboutusnorm.gif");FWLoad("ourworknorma.gif");FWLoad("ourworknorm.gif");FWLoad("contactusnorma.gif");FWLoad("contactusnorm.gif");FWLoad("aboutusnorm1a.gif");FWLoad("aboutusnorm1.gif");}
+//-->
+</script></head><body topmargin=0 leftmargin=0 marginheight=0 marginwidth=0 bgcolor="#ffffff" link="#666666" alink="#faa70e" vlink="#999999" onload="FWPreload()"><table border=0 cellspacing=0 cellpadding=0 width=762><tr valign=top><td colspan=11 rowspan=9><a href="index.html"><img src="whitelogo1.gif" border=0 width=560 height=120 alt=""></a></td><td colspan=3></td><td height=46></td></tr><tr valign=top><td></td><td><img src="aboutusnorma.gif" border=0 width=84 height=14 alt="" usemap="#map1" name="img2"></td><td></td><td height=14></td></tr><tr valign=top><td colspan=3></td><td height=4></td></tr><tr valign=top><td></td><td><img src="ourworknorma.gif" border=0 width=84 height=14 alt="" usemap="#map2" name="img3"></td><td></td><td height=14></td></tr><tr valign=top><td colspan=3></td><td height=4></td></tr><tr valign=top><td></td><td><img src="contactusnorma.gif" border=0 width=84 height=14 alt="" usemap="#map3" name="img4"></td><td></td><td height=14></td></tr><tr valign=top><td colspan=3></td><td height=4></td></tr><tr valign=top><td></td><td><img src="clientloginnorma.gif" border=0 width=84 height=14 alt="" usemap="#map4" name="img1"></td><td></td><td height=14></td></tr><tr valign=top><td colspan=3></td><td height=6></td></tr><tr valign=top><td colspan=5></td><td colspan=9 bgcolor="#cccccc"><spacer type=block width=1 height=1></td><td height=20></td></tr><tr valign=top><td colspan=11></td><td colspan=3 rowspan=11><img src="verisign198300.jpeg" border=0 width=200 height=303 alt=""></td><td height=12></td></tr><tr valign=top><td rowspan=3></td><td colspan=3 rowspan=3><img src="_clear.gif" border=0 width=1 height=1 alt=""><br><img src="item3ad.gif" border=0 width=58 height=18 alt=""></td><td colspan=7></td><td height=4></td></tr><tr valign=top><td></td><td colspan=3><img src="_clear.gif" border=0 width=1 height=2 alt=""><br><img src="item5a.gif" border=0 width=44 height=10 alt=""></td><td colspan=3></td><td height=16></td></tr><tr valign=top><td colspan=7></td><td height=5></td></tr><tr valign=top><td colspan=11></td><td height=3></td></tr><tr valign=top><td colspan=2 rowspan=8></td><td rowspan=8><p class="BodyTextSM"><font face="Arial, Helvetica, Verdana" size="-1">Well-known for providing Internet certificates, VeriSign's has evolved   to serve customers who rely on large technical networks in a variety of industries. VeriSign recently initiated a corporate-wide marketing and branding program to assure that all lines of business, old and new, are effectively represented by its brand and corporate communications. </font></p><p class="BodyTextSM"><font face="Arial, Helvetica, Verdana" size="-1">Working with the Web Properties team, Tangibility was responsible for the overall visual redesign and information architecture for a number of the company's Internet, Intranet, International, and Extranet websites.</font></p><p class="BodyTextSM"><font face="Arial, Helvetica, Verdana" size="-1">Working closely with developers, producers, and writers, we examined VeriSign's internal processes for developing and updating online content and services, and designed a new approach to ensure quality and consistency as the properties evolve over time. </font></p><p class="BodyTextSM"><font face="Arial, Helvetica, Verdana" size="-1"><font size="-2" color="#666666">&nbsp;</font></font></p></td><td colspan=8></td><td height=4></td></tr><tr valign=top><td colspan=2 rowspan=3></td><td rowspan=3><a href="verisign.html" onMouseOver="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWSlave(top.frames,'Indigo',1,1)" onMouseOut="FWRestore(1,'Indigo',1);FWSRestore(top.frames,'Indigo')"><img src="verisignb.gif" border=0 width=62 height=62 alt=""></a></td><td colspan=5></td><td height=45></td></tr><tr valign=top><td></td><td colspan=2><img src="aboutusnorm1a.gif" border=0 width=84 height=14 alt="" usemap="#map5" name="img5"></td><td colspan=2></td><td height=14></td></tr><tr valign=top><td colspan=5></td><td height=3></td></tr><tr valign=top><td colspan=8></td><td height=14></td></tr><tr valign=top><td colspan=2 rowspan=2></td><td colspan=5 rowspan=2><p class="GrayList"><font face="Arial, Helvetica, Verdana" size=2 color="#666666">Developed new strategy, design and content for SSL products retail site on VeriSign.com. </font></p><p class="GrayList"><font face="Arial, Helvetica, Verdana" size=2 color="#666666">Redesigned internal applications, including HR interface, corporate marketing brand center, and assets management system.</font></p><p class="GrayList"><font face="Arial, Helvetica, Verdana" size=2 color="#666666">Researched and redesigned VeriSign's corporate extranets and intranet.</font></p></td><td></td><td height=183></td></tr><tr valign=top><td colspan=4></td><td height=28></td></tr><tr valign=top><td colspan=11></td><td height=112></td></tr><tr><td width=10><img src="_clear.gif" border=0 width=10 height=1 alt=""></td><td width=1><img src="_clear.gif" border=0 width=1 height=1 alt=""></td><td width=308><img src="_clear.gif" border=0 width=308 height=1 alt=""></td><td width=14><img src="_clear.gif" border=0 width=14 height=1 alt=""></td><td width=27><img src="_clear.gif" border=0 width=27 height=1 alt=""></td><td width=62><img src="_clear.gif" border=0 width=62 height=1 alt=""></td><td width=14><img src="_clear.gif" border=0 width=14 height=1 alt=""></td><td width=24><img src="_clear.gif" border=0 width=24 height=1 alt=""></td><td width=60><img src="_clear.gif" border=0 width=60 height=1 alt=""></td><td width=21><img src="_clear.gif" border=0 width=21 height=1 alt=""></td><td width=19><img src="_clear.gif" border=0 width=19 height=1 alt=""></td><td width=7><img src="_clear.gif" border=0 width=7 height=1 alt=""></td><td width=84><img src="_clear.gif" border=0 width=84 height=1 alt=""></td><td width=109><img src="_clear.gif" border=0 width=109 height=1 alt=""></td><td width=2 height=1><img src="_clear.gif" border=0 width=2 height=1 alt=""></td></tr></table><map name="map1"><area alt="" coords="0,0,84,13" href="aboutus.html" onMouseOver="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWSwap('img2',1,'aboutusnorm.gif','Indigo')" onMouseOut="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"><area alt="" coords="0,1,84,14" href="aboutus.html" onMouseOver="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWSwap('img2',1,'aboutusnorm.gif','Indigo')" onMouseOut="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"></map><map name="map2"><area alt="" coords="0,0,84,13" href="ourwork.html" onMouseOver="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWSwap('img3',1,'ourworknorm.gif','Indigo')" onMouseOut="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"><area alt="" coords="0,1,84,14" href="ourwork.html" onMouseOver="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWSwap('img3',1,'ourworknorm.gif','Indigo')" onMouseOut="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"></map><map name="map3"><area alt="" coords="0,0,84,13" href="contactus.html" onMouseOver="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWSwap('img4',1,'contactusnorm.gif','Indigo')" onMouseOut="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"><area alt="" coords="0,1,84,14" href="contactus.html" onMouseOver="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWSwap('img4',1,'contactusnorm.gif','Indigo')" onMouseOut="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"></map><map name="map4"><area alt="" coords="0,0,84,13" href="clientloginpage.html" onMouseOver="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWSwap('img1',1,'clientloginnorm.gif','Indigo')" onMouseOut="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"><area alt="" coords="0,1,84,14" href="clientloginpage.html" onMouseOver="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWSwap('img1',1,'clientloginnorm.gif','Indigo')" onMouseOut="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"></map><map name="map5"><area alt="" coords="1,2,62,12" href="zingnetworksa.html" onMouseOver="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWSwap('img5',1,'aboutusnorm1.gif','Indigo')" onMouseOut="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"><area alt="" coords="0,0,84,13" href="zingnetworksa.html" onMouseOver="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWSwap('img5',1,'aboutusnorm1.gif','Indigo')" onMouseOut="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"><area alt="" coords="1,3,62,13" href="verisign.html" onMouseOver="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWSwap('img5',1,'aboutusnorm1.gif','Indigo')" onMouseOut="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"><area alt="" coords="0,1,84,14" href="zingnetworksa.html" onMouseOver="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWSwap('img5',1,'aboutusnorm1.gif','Indigo')" onMouseOut="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"></map><table border=0 cellspacing=0 cellpadding=0 width=762><tr valign=top><td></td><td height=15></td></tr><tr valign=top><td bgcolor="#999999"><spacer type=block width=1 height=1></td><td height=1></td></tr><tr><td width=360><img src="_clear.gif" border=0 width=360 height=1 alt=""></td><td width=402 height=1><img src="_clear.gif" border=0 width=402 height=1 alt=""></td></tr></table><table border=0 cellspacing=0 cellpadding=0 width=762><tr valign=top><td colspan=2></td><td height=7></td></tr><tr valign=top><td></td><td><p><font face="Arial, Helvetica, Verdana" size="-2" color="#666666">Copyright 2005 Tangibility, Inc.</font></p></td><td height=13></td></tr><tr><td width=10><img src="_clear.gif" border=0 width=10 height=1 alt=""></td><td width=219><img src="_clear.gif" border=0 width=219 height=1 alt=""></td><td width=533 height=1><img src="_clear.gif" border=0 width=533 height=1 alt=""></td></tr></table></body></html>
